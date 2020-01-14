@@ -1,0 +1,67 @@
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+/* to do:
+/give colors to font awsome icons
+/resise the logo
+/set the search button inside a div with text erea
+flex box for the hader 
+*/
+
+.header-icons {
+    color: #888;
+
+}
+header img {
+    height: 25px;
+    width: 100px;  
+    margin: auto;
+
+}
+
+#hamberger {
+    margin: auto;
+
+}
+
+.search-box {
+    width: 60%;
+    min-width: 200px;
+    max-width: 600px;
+    border: 1px solid black;
+    margin: auto;
+}
+.search-text {
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    padding: 0px;
+    border-width: 0px;
+}
+.search-lable {
+    width: 28%;
+    height: 29PX;
+    background-color: #f8f8f8;
+    display: inline-block;
+}
+.search-btn {
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid grey;
+}
+
+
+.header-container {
+    display: flex;
+    
+    border: 1px solid red;
+}
+
