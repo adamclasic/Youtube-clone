@@ -18,18 +18,21 @@ flex box for the hader
 
 .header-icons {
     color: #888;
-
 }
 header img {
     height: 25px;
-    width: 100px;  
+    width: 100px;
+    flex: 1;
     margin: auto;
-
+}
+.logo-container {
+    flex: 1;
+    margin: auto;
 }
 
 #hamberger {
+    flex: 1;
     margin: auto;
-
 }
 
 .search-box {
@@ -37,6 +40,7 @@ header img {
     min-width: 200px;
     max-width: 600px;
     border: 1px solid black;
+    flex: 5;
     margin: auto;
 }
 .search-text {
@@ -63,5 +67,16 @@ header img {
     display: flex;
     
     border: 1px solid red;
+}
+
+#upload-icon {
+    flex: 1;
+    margin: auto;
+}
+#signin-btn {
+    flex: 1;
+    margin: auto;
+    background-color: rgb(22, 122, 198);
+    color: #f8f8f8;
 }
 
