@@ -4,9 +4,6 @@ header
 main
 */
 
-
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -74,7 +71,6 @@ button {
 	outline: inherit;
 }
 
-
 /* The begining of the header */
 
 body {
@@ -118,7 +114,6 @@ header img {
     border-width: 0px;
     border-radius: 2px;
 }
-
 
 .search-btn {
  
@@ -168,6 +163,16 @@ header img {
 
  main {
      background-color: #eeeeee;
-     
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap: 1em;
+     padding: 10px;
  }
+
+
+ /* the style below is temp. Please remove it  */
+ main div {
+     background-color: burlywood;
+ }
+
 
