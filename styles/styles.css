@@ -1,3 +1,69 @@
+/* table of content 
+css reset
+header 
+main
+*/
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+
+html{
+    font-size: 65%;
+}
 button {
     background: none;
 	color: inherit;
@@ -9,12 +75,11 @@ button {
 }
 
 
-/* to do:
-/give colors to font awsome icons
-/resise the logo
-/set the search button inside a div with text erea
-flex box for the hader 
-*/
+/* The begining of the header */
+
+body {
+    font-size: 150%;
+}
 
 .header-icons {
     color: #888;
@@ -36,37 +101,52 @@ header img {
 }
 
 .search-box {
-    width: 60%;
+    display: flex;
+    width: 70%;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 900px;
     border: 1px solid black;
-    flex: 5;
-    margin: auto;
+
+    margin: none;
 }
 .search-text {
-    width: 70%;
-    height: 100%;
-    display: inline-block;
-    padding: 0px;
-    border-width: 0px;
-}
-.search-lable {
-    width: 28%;
-    height: 29PX;
-    background-color: #f8f8f8;
-    display: inline-block;
-}
-.search-btn {
     height: 100%;
     width: 100%;
-    border-left: 1px solid grey;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: large;
+    border-width: 0px;
+    border-radius: 2px;
 }
 
+
+.search-btn {
+ 
+    height: 30PX;
+    width: 80px;
+    max-width: 100px;
+    background-color: #f8f8f8;
+    display: inline-block;
+    border-left: 1px solid grey;
+    
+}
 
 .header-container {
     display: flex;
-    
-    border: 1px solid red;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+.left-container {
+    display: flex;
+    width: 12%;
+
+}
+
+.right-container {
+    display: flex;
+    width: 10%;
 }
 
 #upload-icon {
@@ -76,7 +156,18 @@ header img {
 #signin-btn {
     flex: 1;
     margin: auto;
+    font-size: 90%;
     background-color: rgb(22, 122, 198);
     color: #f8f8f8;
+    border-radius: 2px;
+    padding: 5px;
+    font-family: Roboto;
 }
+
+ /* The end of the header */
+
+ main {
+     background-color: #eeeeee;
+     
+ }
 
