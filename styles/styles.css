@@ -258,9 +258,61 @@ main div {
     font-size: 70%;
 }
 
+/* end of action buttons */
+
+/* start of video discription box */
+.description-box {
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.description-box h3 {
+    font-size: 77%;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.description-box p {
+    font-size: 80%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.more-info {
+    color: #767676;
+    text-align: center;
+    padding-top: 10px;
+    
+
+}
+.more-info button {
+    font-size: 60%;
+    font-weight: 550;
+}
+
+/* end of video discription box  */
+
+/* start of comment section  */
+
+.comment-sec {
+    text-align: center;
+    padding: 48px;
+}
+
+.comment-sec span {
+    text-align: center;
+    font-size: 66%;
+}
+
+/* end of comment section  */
+
+
+
 /*Suggested Videos*/
 .seg {
     font-size: 85%;
+    
 }
 .seg-autoplay-box {
     display: flex;
