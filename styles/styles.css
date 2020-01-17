@@ -54,13 +54,8 @@ table {
 }
 * {
     box-sizing: border-box;
-    font-family: Roboto, Arial, sans-serif;
 }
 
-
-html{
-    font-size: 65%;
-}
 button {
     background: none;
 	color: inherit;
@@ -71,11 +66,13 @@ button {
 	outline: inherit;
 }
 
-/* The begining of the header */
-
 body {
-    font-size: 150%;
+    font-size: 110%;
+    font-family: Roboto, Arial, sans-serif;
+    color: #333333;
 }
+
+/* The begining of the header */
 
 .header-icons {
     color: #888;
@@ -156,7 +153,6 @@ header img {
     color: #f8f8f8;
     border-radius: 2px;
     padding: 5px;
-    font-family: Roboto;
 }
 
  /* The end of the header */
@@ -165,14 +161,74 @@ header img {
      background-color: #eeeeee;
      display: grid;
      grid-template-columns: 2fr 1fr;
-     grid-gap: 1em;
+     grid-gap: 10px;
      padding: 10px;
  }
 
 
  /* the style below is temp. Please remove it  */
- main div {
-     background-color: burlywood;
+main div {
+    background-color: #fff;
+}
+.content {
+    display: grid;
+    grid-gap: 10px;
+    align-self: start;
  }
+.channel-info-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 180px;
+    height: 47px;
+    font-size: 75%;
+} /*to do - change font for channel name*/
+.channel-img img  {
+    height: 47px;
+}
+.channel-info-text {
+    display: grid;
+}
+.sub-btn-box {
+    border: 1px solid #888;
+    color: #373737
+}
+.sub-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 3px;
+    height: 100%;
+}
+
+/*Suggested Videos*/
+.seg {
+    font-size: 85%;
+}
+.seg-autoplay-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.seg-vid-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
+}
+.seg div ul {
+    padding: 10px;
+    margin: auto;
+}
+.seg div ul a {
+    text-decoration: none;
+}
+.seg-vid-title {
+    color: #333333;
+    line-height: 18px;
+}
+.seg-vid-info {
+    color: #767676;
+    font-size: 70%;
+    display: block;
+    line-height: 18px;
+}
 
 
