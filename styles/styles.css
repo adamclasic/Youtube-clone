@@ -199,6 +199,65 @@ main div {
     height: 100%;
 }
 
+.video-info-cont {
+    padding: 15px;
+}
+
+.upper-video-info {
+    font-size: large;
+}
+
+.lower-video-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.views {
+    display: grid;
+    grid-template-rows: 2fr;
+}
+
+
+.views span {
+    
+    font-size: 110%;
+    color: #666666;
+
+}
+
+/* actions buttons */
+
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.action-btns {
+    color:#666666;
+}
+.inner-btns {
+    display: flex;
+}
+
+.left-btns {
+    width: 180px;
+    justify-content: space-between;
+
+}
+.right-btns {
+    width: 85px;
+    justify-content: space-between;
+}
+
+.like-dislike-text, .action-btns-text {
+    font-size: 70%;
+}
+
 /*Suggested Videos*/
 .seg {
     font-size: 85%;
@@ -230,5 +289,7 @@ main div {
     display: block;
     line-height: 18px;
 }
+
+
 
 
