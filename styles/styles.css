@@ -235,10 +235,16 @@ main div {
     justify-content: space-between;
     padding-top: 10px;
     box-sizing: border-box;
+    
 }
 
 .action-btns {
     color:#666666;
+    
+}
+.action-btns,
+.action-btns-text {
+  vertical-align:middle;
 }
 .inner-btns {
     display: flex;
@@ -250,14 +256,18 @@ main div {
 
 }
 .right-btns {
-    width: 85px;
+    width: 100px;
     justify-content: space-between;
 }
 
 .like-dislike-text, .action-btns-text {
     font-size: 70%;
+    font-family: Roboto;
 }
-
+.like-dislike-text {
+    font-size: 110%;
+    font-weight: 150;
+}
 /* end of action buttons */
 
 /* start of video discription box */
@@ -342,6 +352,45 @@ main div {
     line-height: 18px;
 }
 
+/* start footer section */
+footer a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 80%;
+}
+.footer-logo a img {
+    height: 25px;
+    width: 100px;
+}
+footer .top-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 15px;
+}
+footer .bottom-container {
+    padding-bottom: 40px ;
+}
+footer .middle-container ul {
+    border-top: 1px solid #767676;
+}
+footer .middle-container ul,
+footer .bottom-container ul {
+    display: flex;
+    padding: 15px 0 0 8px;
+}
+footer .middle-container ul li, 
+footer .bottom-container ul li {
+    display: flex;
+    padding: 0 10px;
+}
+footer .middle-container ul li {
+    font-weight: bold;
+}
+footer .bottom-container ul {
+    display: flex;
+}
 
+/* end footer section */
 
 
