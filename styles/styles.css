@@ -1,7 +1,14 @@
-/* table of content 
-css reset
-header 
-main
+/* table of content:
+
+1 css reset
+2 header 
+3 main section
+4 video discription box
+5 action buttons 
+6 Video comments section 
+7 Suggested Videos
+8 footer section 
+
 */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -72,7 +79,17 @@ body {
     color: #333333;
 }
 
-/* The begining of the header */
+button {
+    border-radius: 2px;
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0; 
+    background-color: rgba(255, 255, 255, 0.9);
+}
 
 .header-icons {
     color: #888;
@@ -99,7 +116,6 @@ header img {
     min-width: 200px;
     max-width: 900px;
     border: 1px solid black;
-
     margin: none;
 }
 .search-text {
@@ -129,7 +145,6 @@ header img {
     padding: 10px 20px;
 }
 
-
 .left-container {
     display: flex;
     width: 12%;
@@ -151,11 +166,12 @@ header img {
     font-size: 90%;
     background-color: rgb(22, 122, 198);
     color: #f8f8f8;
-    border-radius: 2px;
     padding: 5px;
 }
 
- /* The end of the header */
+ /* end of header */
+
+ /* main section  */
 
  main {
      background-color: #eeeeee;
@@ -165,8 +181,6 @@ header img {
      padding: 10px;
  }
 
-
- /* the style below is temp. Please remove it  */
 main div {
     background-color: #fff;
 }
@@ -181,7 +195,11 @@ main div {
     width: 180px;
     height: 47px;
     font-size: 75%;
-} /*to do - change font for channel name*/
+}
+.channel-info-box h6 {
+    font-weight: 600;
+    font-size: 95%;
+}
 .channel-img img  {
     height: 47px;
 }
@@ -190,6 +208,7 @@ main div {
 }
 .sub-btn-box {
     border: 1px solid #888;
+    border-radius: 2px;
     color: #373737
 }
 .sub-btn {
@@ -228,7 +247,7 @@ main div {
 
 }
 
-/* actions buttons */
+/* action buttons */
 
 .action-section {
     display: flex;
@@ -256,6 +275,7 @@ main div {
 
 }
 .right-btns {
+    position: relative;
     width: 100px;
     justify-content: space-between;
 }
@@ -270,7 +290,24 @@ main div {
 }
 /* end of action buttons */
 
-/* start of video discription box */
+/*sentiment-bar */    
+.sentiment-bar {
+    position: absolute;
+    top:-32px;
+    width: 109px;
+    background: rgba(90, 90, 90, 0.5);
+    margin-left: -9px;
+    margin-top: 20px;
+    margin-bottom: -21px;
+}
+.inside-bar {
+    width: 91%;
+    height: 2px;
+    background: rgb(17, 95, 196);
+}
+/*end of sentiment-bar */
+
+/* video discription box */
 .description-box {
     padding: 10px;
     padding-bottom: 15px;
@@ -303,7 +340,7 @@ main div {
 
 /* end of video discription box  */
 
-/* start of comment section  */
+/* video comments section  */
 
 .comment-sec {
     text-align: center;
@@ -315,14 +352,20 @@ main div {
     font-size: 66%;
 }
 
-/* end of comment section  */
+/* end of video comments section  */
 
 
 
-/*Suggested Videos*/
+/*Suggested Videos */
 .seg {
     font-size: 85%;
-    
+}
+hr {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+    margin-top: 0;
 }
 .seg-autoplay-box {
     display: flex;
@@ -331,8 +374,11 @@ main div {
 }
 .seg-vid-cont {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     margin: 20px 0;
+}
+.img-cont {
+    margin-right: 10px;
 }
 .seg div ul {
     padding: 10px;
@@ -352,7 +398,13 @@ main div {
     line-height: 18px;
 }
 
-/* start footer section */
+/* end of seggested videos  */
+
+/* footer section */
+
+footer {
+    padding: 20px 40px;
+}
 footer a{
     color: #000000;
     text-decoration: none;
@@ -372,7 +424,7 @@ footer .bottom-container {
     padding-bottom: 40px ;
 }
 footer .middle-container ul {
-    border-top: 1px solid #767676;
+    border-top: 1px solid lightgray;
 }
 footer .middle-container ul,
 footer .bottom-container ul {
@@ -384,13 +436,43 @@ footer .bottom-container ul li {
     display: flex;
     padding: 0 10px;
 }
-footer .middle-container ul li {
-    font-weight: bold;
+footer .middle-container ul a li{
+    font-weight: 500;
 }
-footer .bottom-container ul {
+footer .bottom-container ul a{
     display: flex;
+    color: #666666;
+    font-size: 65%;
 }
 
+.top-container img {
+    vertical-align:middle;
+    height: 13px;
+    width: 23px;
+    margin-right: 5px;
+    
+}
+
+.footer-bnts {
+    display: flex;
+    background-color: #f8f8f8;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+    font-size: 70%;
+}
+.rspace {
+    margin-right: 7px;
+}
+.lspace {
+    margin-left: 7px;
+
+}
+.footer-bnts .strong{
+    font-weight: 700;
+}
+.footer-bnts i {
+    color: #666666
+}
 /* end footer section */
 
 
