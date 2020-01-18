@@ -2,7 +2,7 @@
 
 > Youtube replica
 
-![screenshot]
+![screenshot](./images/Screenshot.png)
 
 The page tries to replicate as much as possible the actual YouTube page.
 
@@ -13,7 +13,7 @@ The page tries to replicate as much as possible the actual YouTube page.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/adamclasic/Youtube-Replica/14ab2832a5304c3f5ba05e4a81954f4277dd046f/index.html
+[Live Demo Link](https://rawcdn.githack.com/adamclasic/Youtube-clone/b04e6677ebf2cd1ccb571f1554c6a5a42ac171c9/index.html
 )
 
 
@@ -26,15 +26,15 @@ The page tries to replicate as much as possible the actual YouTube page.
 
 👤 **Author2**
 
-- Github: [@rammazzoti2000](https://github.com/rammazzoti2000)
-- Linkedin: [Alexandru Bangau](https://www.linkedin.com/in/alexandru-bangau/)
+- Github: [@Mupa1](https://github.com/Mupa1)
+- Linkedin: [@mupa-nzaphila]www.linkedin.com/in/mupa-nzaphila)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome! Start by:
 * Forking the project
 * Cloning the project to your local machine
-* `cd` into the project directory
+* `cd` into the Youtube-Replica project directory
 * Run `git checkout -b your-branch-name`
 * Make your contributions
 * Push your branch up to your forked repository
