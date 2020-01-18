@@ -27,7 +27,7 @@ The page tries to replicate as much as possible the actual YouTube page.
 👤 **Author2**
 
 - Github: [@Mupa1](https://github.com/Mupa1)
-- Linkedin: [@mupa-nzaphila]www.linkedin.com/in/mupa-nzaphila)
+- Linkedin: [@mupa-nzaphila](www.linkedin.com/in/mupa-nzaphila)
 
 ## 🤝 Contributing
 
