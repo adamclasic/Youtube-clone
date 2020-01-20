@@ -83,6 +83,11 @@ button {
     border-radius: 2px;
 }
 
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+
 /* Header */
 
 header {
@@ -189,6 +194,12 @@ main div {
     grid-gap: 10px;
     align-self: start;
  }
+
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
 .channel-info-box {
     display: grid;
     grid-template-columns: 1fr 2fr;
