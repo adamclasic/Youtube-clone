@@ -98,6 +98,8 @@ header {
 
 .header-icons {
     color: #888;
+    margin-left: 10px;
+    flex: 1;
 }
 header img {
     height: 25px;
@@ -119,8 +121,8 @@ header img {
     display: flex;
     width: 70%;
     min-width: 200px;
-    max-width: 900px;
-    border: 1px solid black;
+    max-width: 650px;
+    border: 1px solid grey;
     margin: none;
 }
 .search-text {
@@ -141,6 +143,7 @@ header img {
     background-color: #f8f8f8;
     display: inline-block;
     border-left: 1px solid grey;
+    padding: 0 20px;
     
 }
 
@@ -158,13 +161,9 @@ header img {
 
 .right-container {
     display: flex;
-    width: 10%;
+    width: 15%;
 }
 
-#upload-icon {
-    flex: 1;
-    margin: auto;
-}
 #signin-btn {
     flex: 1;
     margin: auto;
@@ -172,6 +171,8 @@ header img {
     background-color: rgb(22, 122, 198);
     color: #f8f8f8;
     padding: 5px;
+    flex: 3;
+    margin-left: 10px;
 }
 
  /* end of header */
