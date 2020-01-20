@@ -13,7 +13,7 @@ The page tries to replicate as much as possible the actual YouTube page.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/adamclasic/Youtube-clone/b04e6677ebf2cd1ccb571f1554c6a5a42ac171c9/index.html
+[Live Demo Link](https://rawcdn.githack.com/adamclasic/Youtube-clone/5dbd2d504023e3b4611ebb46c26fba9fff72863c/index.html
 )
 
 
