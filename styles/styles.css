@@ -1,0 +1,534 @@
+/* table of content:
+
+1 css reset
+2 header 
+3 main section
+4 video discription box
+5 action buttons 
+6 Video comments section 
+7 Suggested Videos
+8 footer section 
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+body {
+    font-size: 110%;
+    font-family: Roboto, Arial, sans-serif;
+    color: #333333;
+}
+
+button {
+    border-radius: 2px;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0; 
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-icons {
+    color: #888;
+    margin-left: 10px;
+    flex: 1;
+}
+header img {
+    height: 25px;
+    width: 100px;
+    flex: 1;
+    margin: auto;
+}
+.logo-container {
+    flex: 1;
+    margin: auto;
+}
+
+#hamberger {
+    flex: 1;
+    margin: auto;
+}
+
+.search-box {
+    display: flex;
+    width: 70%;
+    min-width: 200px;
+    max-width: 650px;
+    border: 1px solid grey;
+    margin: none;
+}
+.search-text {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: large;
+    border-width: 0px;
+    border-radius: 2px;
+}
+
+.search-btn {
+ 
+    height: 30PX;
+    width: 80px;
+    max-width: 100px;
+    background-color: #f8f8f8;
+    display: inline-block;
+    border-left: 1px solid grey;
+    padding: 0 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.left-container {
+    display: flex;
+    width: 12%;
+
+}
+
+.right-container {
+    display: flex;
+    width: 15%;
+}
+
+#signin-btn {
+    flex: 1;
+    margin: auto;
+    font-size: 90%;
+    background-color: rgb(22, 122, 198);
+    color: #f8f8f8;
+    padding: 5px;
+    flex: 3;
+    margin-left: 10px;
+}
+
+ /* end of header */
+
+ /* main section  */
+
+ main {
+     background-color: #eeeeee;
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap: 10px;
+     padding: 10px;
+ }
+
+main div {
+    background-color: #fff;
+}
+.content {
+    display: grid;
+    grid-gap: 10px;
+    align-self: start;
+ }
+
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.channel-info-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 180px;
+    height: 47px;
+    font-size: 75%;
+}
+.channel-info-box h6 {
+    font-weight: 600;
+    font-size: 95%;
+}
+.channel-img img  {
+    height: 47px;
+}
+.channel-info-text {
+    display: grid;
+}
+.sub-btn-box {
+    border: 1px solid #888;
+    border-radius: 2px;
+    color: #373737
+}
+.sub-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 3px;
+    height: 100%;
+}
+
+.video-info-cont {
+    padding: 15px;
+}
+
+.upper-video-info {
+    font-size: large;
+}
+
+.lower-video-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.views {
+    display: grid;
+    grid-template-rows: 2fr;
+}
+
+
+.views span {
+    
+    font-size: 110%;
+    color: #666666;
+
+}
+
+/* action buttons */
+
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+
+.action-btns {
+    color:#666666;
+    
+}
+.action-btns,
+.action-btns-text {
+  vertical-align:middle;
+}
+.inner-btns {
+    display: flex;
+}
+
+.left-btns {
+    width: 180px;
+    justify-content: space-between;
+
+}
+.right-btns {
+    position: relative;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.like-dislike-text, .action-btns-text {
+    font-size: 70%;
+    font-family: Roboto;
+}
+.like-dislike-text {
+    font-size: 110%;
+    font-weight: 150;
+}
+/* end of action buttons */
+
+/*sentiment-bar */    
+.sentiment-bar {
+    position: absolute;
+    top:-32px;
+    width: 109px;
+    background: rgba(90, 90, 90, 0.5);
+    margin-left: -9px;
+    margin-top: 20px;
+    margin-bottom: -21px;
+}
+.inside-bar {
+    width: 91%;
+    height: 2px;
+    background: rgb(17, 95, 196);
+}
+/*end of sentiment-bar */
+
+/* video discription box */
+.description-box {
+    padding: 10px;
+    padding-bottom: 15px;
+
+    line-height: 18px;
+}
+
+.description-box h3 {
+    font-size: 77%;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.description-box p {
+    font-size: 80%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.more-info {
+    color: #767676;
+    text-align: center;
+    padding-top: 10px;
+    
+
+}
+.more-info button {
+    font-size: 60%;
+    font-weight: 550;
+}
+
+/* end of video discription box  */
+
+/* video comments section  */
+
+.comment-sec {
+    text-align: center;
+    padding: 48px;
+}
+
+.comment-sec span {
+    text-align: center;
+    font-size: 66%;
+}
+.comments {
+    padding: 10px;
+    font-size: 80%;
+}
+.comments h5 {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.sort-comment-menu img {
+    vertical-align: middle;
+}
+.comments-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comment-box {
+    display: flex;
+    padding: 10px 0;
+    line-height: 18px;
+}
+.add-comment {
+    border-bottom: 1px solid lightgray;
+    height: 25px;
+}
+.comment-detail {
+    width: 100%;
+    margin: 10px 0 0 20px;
+}
+.user-details {
+    padding-bottom: 10px;
+}
+.user-details span {
+    font-weight: bold;
+}
+.comment-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding-top: 10px;
+}
+
+/* end of video comments section  */
+
+
+/*Suggested Videos */
+.seg {
+    font-size: 85%;
+}
+hr {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+    margin-top: 0;
+}
+.seg-autoplay-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fa-toggle-on {
+    font-size: larger;
+    color: rgb(22, 122, 198);
+}
+.seg-vid-cont {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px 0;
+}
+.img-cont {
+    margin-right: 10px;
+}
+.seg-vid-cont {
+    padding: 10px;
+    margin: auto;
+}
+.seg-vid-title {
+    color: #333333;
+    line-height: 18px;
+}
+.seg-vid-info {
+    color: #767676;
+    font-size: 70%;
+    display: block;
+    line-height: 18px;
+}
+
+/* end of seggested videos  */
+
+/* footer section */
+
+footer {
+    padding: 20px 40px;
+}
+footer a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 80%;
+}
+.footer-logo a img {
+    height: 25px;
+    width: 100px;
+}
+footer .top-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 15px;
+}
+footer .bottom-container {
+    padding-bottom: 40px ;
+}
+footer .middle-container ul {
+    border-top: 1px solid lightgray;
+}
+footer .middle-container ul,
+footer .bottom-container ul {
+    display: flex;
+    padding: 15px 0 0 8px;
+}
+footer .middle-container ul li, 
+footer .bottom-container ul li {
+    display: flex;
+    padding: 0 10px;
+}
+footer .middle-container ul a li{
+    font-weight: 500;
+}
+footer .bottom-container ul a{
+    display: flex;
+    color: #666666;
+    font-size: 65%;
+}
+
+.top-container img {
+    vertical-align:middle;
+    height: 13px;
+    width: 23px;
+    margin-right: 5px;
+    
+}
+
+.footer-bnts {
+    display: flex;
+    background-color: #f8f8f8;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+    font-size: 70%;
+}
+.rspace {
+    margin-right: 7px;
+}
+.lspace {
+    margin-left: 7px;
+
+}
+.footer-bnts .strong{
+    font-weight: 700;
+}
+.footer-bnts i {
+    color: #666666
+}
+/* end footer section */
+
+

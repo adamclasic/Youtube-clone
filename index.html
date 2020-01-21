@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Replica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header Section -->
+    <header>
+        <nav class="header-container">
+            <div class="left-container">
+                <button id="hamberger" class="fa fa-bars header-icons"></button>
+                <div class="logo-container">
+                    <img src="./images/youtube-logo.png" alt="youtube logo">
+                </div>
+            </div>
+            <div class="search-box">
+                <input class="search-text" type="text" name="search" placeholder="Search">
+                <button class="fas fa-search header-icons search-btn"></button>
+            </div>
+            <div class="right-container">
+                <button class="fa fa-th header-icons"></button>
+                <button class="fas fa-bell header-icons"></button>
+                <button id="upload-icon" class="fas fa-upload header-icons"></button>
+                <button id="signin-btn">Sign in</button>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Main Section -->
+    <main>
+        <!-- Start Video Section -->
+        <section class="content">
+            <div>
+                <iframe src="https://www.youtube.com/embed/k6KcaMffxac" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info-cont">
+                <div class="upper-video-info">
+                    <h3>Contributing to Open Source Part I: The Easy Way</h3>
+                </div>
+                <br>
+                <div class="lower-video-info">
+                    <div class="channel-info-box">
+                        <div class="channel-img">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgUCCAMNAwMEAwkEBQgFBQQQBQoHBxAIDAYMDAsKCwoNDhIQDQ4RDgsLEBYJERMUFQwVCA8XGBYUDhELDAoBAwQEBgUGCgYGCBQNCwsUExQODhANFBANFA0NFBAODRQJCxMJDRAUCw4LFAoLFA0UFBQNCAgICAgIDgkICAgICP/AABEIADAAMAMBEQACEQEDEQH/xAAaAAEAAwADAAAAAAAAAAAAAAAABAUHAQIG/8QAKhAAAQMDAQcDBQAAAAAAAAAAAQACAwQFEQYHEhMUITFBMjV0CFFhcbP/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgUDBAYHAf/EACkRAAEDAQUHBQAAAAAAAAAAAAABAgMEBREhMZETMzRScZLREiJDUcH/2gAMAwEAAhEDEQA/AJC8POMCAIAgCAIAgCAu4dD3WoDDFp+6Ste0OY8UUhaQR0IO71H5WylNMqXpGvavgybN/Kuhy/Ql2iDi/T11YGjJdyUoGPv6UWlmT417V8DZv5V0KNaxjCAIAgNu2L7Zb/X1+lYKi/TyQOqIqY03DYBwwMBud3PYDyuls20al08cSye29Euwy0LGnqJFe1quwJW2/bPf7HctSw0N+np4Y5eEyn4cZG6YRkZLc+T58qdp2jUx1EkbZLm/WGWhKoqJGyOajsDB1y5WBAEAQHuthfvGk/nsVpZfFx9TZpt63qSvqE961T8kfxap2txcnX8QlVb1xnaqDUCAIAgJ9ivlRpqaklts3LS0kglhl3Guw4djhwIP6IWWKV0T0exblTIm1ytX1Jmh21DqGp1VNVS3So5qWqdvzTbjWZOAPS0ADoB2C+zSvmesj1vVc1DnK9fU7NSuWEgEAQBAEAQBAEB//9k=" alt="channel logo">
+                        </div>
+                        <div class="channel-info-text">
+                            <div>
+                               <h6>The Odin Project</h6> 
+                            </div>
+                            <div class="sub-btn-box">
+                                <button class="sub-btn">
+                                    <i class="fab fa-youtube"></i> Subscribe
+                                </button>
+                                <span>423</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="views">
+                        <span></span>
+                        <span> 50,016 Views </span>
+                    </div>
+                </div>
+                <div class="action-section">
+                    <ul class='inner-btns left-btns'>
+                        <li><button class="action-btns fas fa-plus"><span class="action-btns-text"> Add to</span></button></li>
+                        <li><button class="action-btns fas fa-share"><span class="action-btns-text"> Share</span></button></li>
+                        <li><button class="action-btns fas fa-ellipsis-h"><span class="action-btns-text"> More</span></button></li>
+                    </ul>
+                    <div class='inner-btns right-btns'>
+                        <div class="sentiment-bar">
+                            <div class="inside-bar"></div>
+                        </div>
+                        <button class="action-btns fas fa-thumbs-up"><span class="action-btns-text"><span class="like-dislike-text"> 312</span></span></button>
+                        <button class="action-btns fas fa-thumbs-down"><span class="action-btns-text"><span class="like-dislike-text"> 12</span></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="description-box">
+                <h3>Published on Feb 27, 2014</h3>
+                <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at <a href="http://theodinproject.com"> http://theodinproject.com.</a></p>
+                <div class="more-info"><button>SHOW MORE</button></div>
+            </div>
+
+            <div class="comments">
+                <h5>3 Comments 
+                    <span class="sort-comment-menu">
+                        <img src="./images/menu_bar.png" alt="menu icon"> SORT BY
+                    </span>
+                </h5>
+                <div class="comment-box">
+                    <img class="comments-avatar" src="https://lh3.googleusercontent.com/-JZXmaLFu50o/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcQEbRwllCztdeOcBTUP1GwczMX0A/s88/photo.jpg" alt="thumbnail">
+                    <p class="comment-detail add-comment">Add a public comment</p>
+                </div>
+                <div class="comment-box">
+                    <img class="comments-avatar" src="https://yt3.ggpht.com/a/AGF-l7958AisBa5G2wEhWBR7iu7eX4KI6ORTMISapQ=s48-c-k-c0xffffffff-no-rj-mo" alt="thumbnail">
+                    <div class="comment-detail">
+                        <p class="user-details">
+                            <a href="#"><span>Winng N.</span> 2 years ago (edited)</a>
+                        </p>
+                        <p>"use your powers for good" haha</p>
+                        <p>thank you for the video.</p>
+                        <div class="comment-btns">
+                            <button class="action-btns fas fa-thumbs-up"><span class="action-btns-text"><span class="like-dislike-text"> 10</span></span></button>
+                            <button class="action-btns fas fa-thumbs-down"><span class="action-btns-text"><span class="like-dislike-text"> </span></span></button>
+                            <button>REPLY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-box">
+                    <img class="comments-avatar" src="https://yt3.ggpht.com/a/AGF-l7-y2XLHUpijO-xG4Zumsf0pcMbAI4Glw7MvrA=s48-c-k-c0xffffffff-no-rj-mo" alt="thumbnail">
+                    <div class="comment-detail">
+                        <p class="user-details">
+                            <a href="#"><span>1newbie</span> 1 years ago</a>
+                        </p>
+                        <p>A remark to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</p>
+                        <div class="comment-btns">
+                            <button class="action-btns fas fa-thumbs-up"><span class="action-btns-text"><span class="like-dislike-text"> 2</span></span></button>
+                            <button class="action-btns fas fa-thumbs-down"><span class="action-btns-text"><span class="like-dislike-text"> 1</span></span></button>
+                            <button>REPLY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-box">
+                    <img class="comments-avatar" src="https://yt3.ggpht.com/a/AGF-l7_fXweTIFjpvWaNTGn9BJ3n3Fc0txmlQtHZvA=s48-c-k-c0xffffffff-no-rj-mo" alt="thumbnail">
+                    <div class="comment-detail">
+                        <p class="user-details">
+                            <a href="#"><span>Richard Dickinso</span> 5 years ago </a>
+                        </p>
+                        <p>I am working through the Odin Project which is good but it took me ages to figure out how to submit my solution to the HTML/CSS project.I posted in all places (on the Odin website, on Google+ and others) and I finally got a reply (thanks hgducherne). However I'm still waiting for the repo admin to accept my pull request, so this has been a slow, tedious process as my first introduction to</p>
+                        <div class="comment-btns">
+                            <button class="action-btns fas fa-thumbs-up"><span class="action-btns-text"><span class="like-dislike-text"> 1</span></span></button>
+                            <button class="action-btns fas fa-thumbs-down"><span class="action-btns-text"><span class="like-dislike-text"> 1</span></span></button>
+                            <button>REPLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- End Video Section -->
+
+        <!-- Start Suggested Videos Section -->
+        <section class="seg">
+            <div class="seg-autoplay-box">
+                <div>
+                    <h4>Up next</h4>
+                </div>
+                
+                <div>
+                    <span>
+                        <label for="autoplay-checkbox">Autoplay</label>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <button name="autoplay-checkbox" class="fas fa-toggle-on" id="autoplay-checkbox"></button>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/495e6661840ba5e59315b8d9fbd12e8f79916207" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    How To Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft'by
+                                </h3>
+                                <span class="seg-vid-info">imtiana</span>
+                                <span class="seg-vid-info">981,543 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="#">
+                        <div class="seg-vid-cont">
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/94ce5195858269ff0184aa735ee160f562dafac4" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Programming in Visual Basic .Net How to Connect Access Database to
+                                </h3>
+                                <span class="seg-vid-info">iBasskung</span>
+                                <span class="seg-vid-info">16,130,993 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/42fcf704757c206b21126f9ef6c413eff28de822" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    REST API concepts and examples
+                                </h3>
+                                <span class="seg-vid-info">WebConcepts</span>
+                                <span class="seg-vid-info">3,580,484 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/ed9683aa07170cb5421ba283d3aad8e0a3626b97" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A Case
+                                </h3>
+                                <span class="seg-vid-info">Valuetainment</span>
+                                <span class="seg-vid-info">444,634 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/e551ad6b2fda543caa6fbd78c98ec95c1f1d0aff" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    How to create a 3D Terrain with Google Maps and height maps in Photoshop
+                                </h3>
+                                <span class="seg-vid-info">Orange Box Ceo</span>
+                                <span class="seg-vid-info">6,269,391 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/df21e12d7260fba2247c4dd328453a98929270e9" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Convolutional Neural Networks (CNNs) explained
+                                </h3>
+                                <span class="seg-vid-info">deepdivzard</span>
+                                <span class="seg-vid-info">239,752 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/0425d088770dd5fbb04c5830b5d45ceb7f87eb22" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Top 10 divnux Job Interview Questions
+                                </h3>
+                                <span class="seg-vid-info">tutoriaLinux</span>
+                                <span class="seg-vid-info">1,236,003 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/87ad6fdeaef86aa051f826e3006c068b60e06de9" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Running an SQL Injection Attack - Computerphile
+                                </h3>
+                                <span class="seg-vid-info">Computerphile</span>
+                                <span class="seg-vid-info">2,217,477 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/b6e60231c77705ba5365c14da7c4ecb4ccb6cf86" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    How to prepare for product based companies??
+                                </h3>
+                                <span class="seg-vid-info">Gate Lectures by Ravindrababu Ravu</span>
+                                <span class="seg-vid-info">291,215 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/30341e348ffdfd8ef110d868a3f4892d1dff1719" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Visual Basic .Net : Search in Access Database - DataGridView BindingSourc
+                                </h3>
+                                <span class="seg-vid-info">iBasskung</span>
+                                <span class="seg-vid-info">6,047,577 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/9104e3bbe284cc6497daa29c2c6128b6d4ab68cc" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    How To Convert pdf to word without software
+                                </h3>
+                                <span class="seg-vid-info">karim hamdadi</span>
+                                <span class="seg-vid-info">12,275,519 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/f19150ffbc1e56e3c0f4bf3d16f852c1a06c00d9" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    What Python Projects Should I Build to Get a Job?
+                                </h3>
+                                <span class="seg-vid-info">Real Python</span>
+                                <span class="seg-vid-info">169,155 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    How To NOT Look Like A Tourist | What To Wear In Europe
+                                </h3>
+                                <span class="seg-vid-info">Audrey Coyne</span>
+                                <span class="seg-vid-info">3,432,133 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Your First GitHub Pull Request (in 10 Mins)
+                                </h3>
+                                <span class="seg-vid-info">Jackson Bates</span>
+                                <span class="seg-vid-info">31,930 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont"> 
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/6b60f3abb556233757873da7cedd5b091744ce34" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Top signs of an inexperienced programmer
+                                </h3>
+                                <span class="seg-vid-info">TechLead</span>
+                                <span class="seg-vid-info">928,523 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont">
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/d95c11ceed49c1ae50d224d33110ab2728c03a23" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    How to Learn Anything... Fast - Josh Kaufman
+                                </h3>
+                                <span class="seg-vid-info">The RSA</span>
+                                <span class="seg-vid-info">3,157,647 views</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="seg-vid-cont">
+                            <div class="img-cont">
+                                <img src="https://archive.ph/Bss88/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8" alt="img">
+                            </div>
+                            <div>
+                                <h3 class="seg-vid-title">
+                                    Git & GitHub: Pull requests (10/11)
+                                </h3>
+                                <span class="seg-vid-info">Codecourse</span>
+                                <span class="seg-vid-info">78,624 views</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Suggested Videos Section -->
+
+    </main>
+    <!-- End Main Section -->
+
+    <!-- Start Footer Section -->
+        <footer>
+            <div class="top-container">
+                <div class="footer-logo">
+                    <a href="#"><img src="./images/youtube-logo.png" alt="youtube logo"></a>
+                </div>
+                <button class="footer-bnts"><img src="./images/25x15.png" alt="lang"> Language:<span class="strong">English</span> <i class="fas fa-sort-down lspace"></i></button>
+                <button class="footer-bnts">Location: <span class="strong"> Nethalands </span><i class="fas fa-sort-down lspace"></i></button>
+                <button class="footer-bnts">Restricted Mode: <span class="strong">Off </span><i class="fas fa-sort-down lspace"></i></button>
+                <button class="footer-bnts"><i class="fas fa-hourglass-start rspace "></i>History </button>
+                <button class="footer-bnts"><i class="fas fa-question-circle rspace"></i>Help </button>
+            </div>
+            <div class="middle-container">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Creators</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Developers</a></li>
+                </ul>
+            </div>
+            <div class="bottom-container">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy & Safety</a></li>
+                    <li><a href="#">Test new features</a></li>
+                </ul>
+            </div>
+        </footer>  
+    <!-- Start Footer Section -->    
+</body>
+</html>
+
+<!-- replicated from version august 2019 of Youtube.com  -->
