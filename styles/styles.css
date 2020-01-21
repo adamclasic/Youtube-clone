@@ -323,6 +323,8 @@ iframe {
 .description-box {
     padding: 10px;
     padding-bottom: 15px;
+
+    line-height: 18px;
 }
 
 .description-box h3 {
@@ -363,9 +365,50 @@ iframe {
     text-align: center;
     font-size: 66%;
 }
+.comments {
+    padding: 10px;
+    font-size: 80%;
+}
+.comments h5 {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.sort-comment-menu img {
+    vertical-align: middle;
+}
+.comments-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comment-box {
+    display: flex;
+    padding: 10px 0;
+    line-height: 18px;
+}
+.add-comment {
+    border-bottom: 1px solid lightgray;
+    height: 25px;
+}
+.comment-detail {
+    width: 100%;
+    margin: 10px 0 0 20px;
+}
+.user-details {
+    padding-bottom: 10px;
+}
+.user-details span {
+    font-weight: bold;
+}
+.comment-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding-top: 10px;
+}
 
 /* end of video comments section  */
-
 
 
 /*Suggested Videos */
@@ -384,6 +427,10 @@ hr {
     justify-content: space-between;
     padding: 10px;
 }
+.fa-toggle-on {
+    font-size: larger;
+    color: rgb(22, 122, 198);
+}
 .seg-vid-cont {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -392,12 +439,9 @@ hr {
 .img-cont {
     margin-right: 10px;
 }
-.seg div ul {
+.seg-vid-cont {
     padding: 10px;
     margin: auto;
-}
-.seg div ul a {
-    text-decoration: none;
 }
 .seg-vid-title {
     color: #333333;
