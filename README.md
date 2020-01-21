@@ -2,7 +2,7 @@
 
 > Youtube replica
 
-![screenshot](./images/Screenshot.png)
+![screenshot](./images/Screenshot_new.png)
 
 The page tries to replicate as much as possible the actual YouTube page.
 
